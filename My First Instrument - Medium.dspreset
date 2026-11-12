@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <!-- MEDIUM: mapping + round robin + amp envelope. See README.md -->
+
+  <!-- ============================ SAMPLES ============================ -->
+  <groups>
+    <group loVel="1" hiVel="127" seqMode="round_robin" seqLength="3"
+           attack="0.01" decay="0.2" sustain="0.9" release="0.6"
+           ampVelTrack="0.35">
+      <!-- Round robin take 1 -->
+      <sample rootNote="52" loNote="0"  hiNote="52"  seqPosition="1" path="Samples/DH WARP3/DH WARP3_052_RR1.flac" />
+      <sample rootNote="62" loNote="53" hiNote="62"  seqPosition="1" path="Samples/DH WARP3/DH WARP3_062_RR1.flac" />
+      <sample rootNote="71" loNote="63" hiNote="71"  seqPosition="1" path="Samples/DH WARP3/DH WARP3_071_RR1.flac" />
+      <sample rootNote="83" loNote="72" hiNote="83"  seqPosition="1" path="Samples/DH WARP3/DH WARP3_083_RR1.flac" />
+      <sample rootNote="96" loNote="84" hiNote="127" seqPosition="1" path="Samples/DH WARP3/DH WARP3_096_RR1.flac" />
+
+      <!-- Round robin take 2 -->
+      <sample rootNote="52" loNote="0"  hiNote="52"  seqPosition="2" path="Samples/DH WARP3/DH WARP3_052_RR2.flac" />
+      <sample rootNote="62" loNote="53" hiNote="62"  seqPosition="2" path="Samples/DH WARP3/DH WARP3_062_RR2.flac" />
+      <sample rootNote="71" loNote="63" hiNote="71"  seqPosition="2" path="Samples/DH WARP3/DH WARP3_071_RR2.flac" />
+      <sample rootNote="83" loNote="72" hiNote="83"  seqPosition="2" path="Samples/DH WARP3/DH WARP3_083_RR2.flac" />
+      <sample rootNote="96" loNote="84" hiNote="127" seqPosition="2" path="Samples/DH WARP3/DH WARP3_096_RR2.flac" />
+
+      <!-- Round robin take 3 -->
+      <sample rootNote="52" loNote="0"  hiNote="52"  seqPosition="3" path="Samples/DH WARP3/DH WARP3_052_RR3.flac" />
+      <sample rootNote="62" loNote="53" hiNote="62"  seqPosition="3" path="Samples/DH WARP3/DH WARP3_062_RR3.flac" />
+      <sample rootNote="71" loNote="63" hiNote="71"  seqPosition="3" path="Samples/DH WARP3/DH WARP3_071_RR3.flac" />
+      <sample rootNote="83" loNote="72" hiNote="83"  seqPosition="3" path="Samples/DH WARP3/DH WARP3_083_RR3.flac" />
+      <sample rootNote="96" loNote="84" hiNote="127" seqPosition="3" path="Samples/DH WARP3/DH WARP3_096_RR3.flac" />
+    </group>
+  </groups>
+
+  <!-- ========================= USER INTERFACE ======================== -->
+  <ui width="812" height="230" bgColor="FF14161F">
+    <tab name="main">
+      <rectangle x="0" y="0" width="812" height="56" fillColor="FF1E2230" />
+      <rectangle x="0" y="54" width="812" height="2" fillColor="FF4FD1C5" />
+      <label x="20" y="8" width="500" height="26" text="MY FIRST INSTRUMENT"
+             textColor="FFFFFFFF" textSize="22" hAlign="left" />
+      <label x="20" y="32" width="560" height="18"
+             text="MEDIUM  ·  5 zones  ·  3 round robins  ·  ADSR envelope"
+             textColor="FF8A93AD" textSize="12" hAlign="left" />
+      <label x="600" y="18" width="192" height="20" text="LEVEL 2 / 3"
+             textColor="FF4FD1C5" textSize="14" hAlign="right" />
+
+      <rectangle x="16" y="68" width="480" height="142" fillColor="FF1E2230" />
+      <label x="28" y="74" width="300" height="18" text="AMP ENVELOPE"
+             textColor="FF4FD1C5" textSize="13" hAlign="left" />
+
+      <labeled-knob x="26" y="96" width="80" height="106" label="Volume"
+                    type="float" minValue="0" maxValue="1" value="0.8"
+                    textColor="FFE8ECF5" textSize="13"
+                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+        <binding type="amp" level="instrument" position="0" parameter="AMP_VOLUME" />
+      </labeled-knob>
+      <labeled-knob x="116" y="96" width="80" height="106" label="Attack"
+                    type="float" minValue="0" maxValue="5" value="0.01"
+                    textColor="FFE8ECF5" textSize="13"
+                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+        <binding type="amp" level="group" position="0" parameter="ENV_ATTACK" />
+      </labeled-knob>
+      <labeled-knob x="206" y="96" width="80" height="106" label="Decay"
+                    type="float" minValue="0" maxValue="5" value="0.2"
+                    textColor="FFE8ECF5" textSize="13"
+                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+        <binding type="amp" level="group" position="0" parameter="ENV_DECAY" />
+      </labeled-knob>
+      <labeled-knob x="296" y="96" width="80" height="106" label="Sustain"
+                    type="float" minValue="0" maxValue="1" value="0.9"
+                    textColor="FFE8ECF5" textSize="13"
+                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+        <binding type="amp" level="group" position="0" parameter="ENV_SUSTAIN" />
+      </labeled-knob>
+      <labeled-knob x="386" y="96" width="80" height="106" label="Release"
+                    type="float" minValue="0" maxValue="10" value="0.6"
+                    textColor="FFE8ECF5" textSize="13"
+                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+        <binding type="amp" level="group" position="0" parameter="ENV_RELEASE" />
+      </labeled-knob>
+    </tab>
+  </ui>
+</DecentSampler>
