@@ -13,41 +13,39 @@
     </group>
   </groups>
 
+
+
+
+
+
+
+
+
   <!-- ========================= USER INTERFACE ======================== -->
-  <ui width="812" height="230" bgColor="FF14161F">
+  <ui width="812" height="375" bgColor="FFFFFFFF">
     <tab name="main">
-      <rectangle x="0" y="0" width="812" height="56" fillColor="FF1E2230" />
-      <rectangle x="0" y="54" width="812" height="2" fillColor="FF4FD1C5" />
-      <label x="20" y="8" width="500" height="26" text="MY FIRST INSTRUMENT"
-             textColor="FFFFFFFF" textSize="22" hAlign="left" />
-      <label x="20" y="32" width="560" height="18"
-             text="EASY  ·  5 zones  ·  1 sample per zone"
-             textColor="FF8A93AD" textSize="12" hAlign="left" />
-      <label x="600" y="18" width="192" height="20" text="LEVEL 1 / 3"
-             textColor="FF4FD1C5" textSize="14" hAlign="right" />
+      <label x="24" y="12" width="600" height="26" text="My First Instrument - Easy" textColor="FF000000" textSize="18" hAlign="left" />
 
-      <rectangle x="16" y="68" width="300" height="142" fillColor="FF1E2230" />
-      <label x="28" y="74" width="280" height="18" text="AMP"
-             textColor="FF4FD1C5" textSize="13" hAlign="left" />
-
-      <labeled-knob x="26" y="96" width="80" height="106" label="Volume"
-                    type="float" minValue="0" maxValue="1" value="0.8"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+      <!-- Amp -->
+      <label x="24" y="50" width="150" height="18" text="Amp" textColor="FF666666" textSize="12" hAlign="left" />
+      <control x="39" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Volume" showLabel="false" type="float" minValue="0" maxValue="1" value="0.8"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="instrument" position="0" parameter="AMP_VOLUME" />
-      </labeled-knob>
-      <labeled-knob x="116" y="96" width="80" height="106" label="Attack"
-                    type="float" minValue="0" maxValue="5" value="0"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+      </control>
+      <label x="24" y="196" width="50" height="16" text="Volume" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="89" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Attack" showLabel="false" type="float" minValue="0" maxValue="5" value="0"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="group" position="0" parameter="ENV_ATTACK" />
-      </labeled-knob>
-      <labeled-knob x="206" y="96" width="80" height="106" label="Release"
-                    type="float" minValue="0" maxValue="10" value="0.48"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+      </control>
+      <label x="74" y="196" width="50" height="16" text="Attack" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="139" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Release" showLabel="false" type="float" minValue="0" maxValue="10" value="0.48"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="group" position="0" parameter="ENV_RELEASE" />
-      </labeled-knob>
+      </control>
+      <label x="124" y="196" width="50" height="16" text="Release" textColor="FF000000" textSize="11" hAlign="centred" />
     </tab>
   </ui>
 </DecentSampler>

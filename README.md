@@ -30,13 +30,17 @@ Instrument_Design_Workshop/
 └── IR/                    ← impulse responses for reverb
 ```
 
+## Your own instrument
+
+`My First Instrument.dspreset` is an empty template. Add your own samples, effects and sliders to it, using the three levels below as a guide.
+
 ## The three levels
 
 | Level | File | What you learn |
 |---|---|---|
-| 1. Easy | `My First Instrument - Easy.dspreset` | Sample mapping, the volume control and a simple envelope |
-| 2. Medium | `My First Instrument - Medium.dspreset` | Round robins and the full ADSR envelope |
-| 3. Hard | `My First Instrument - Hard.dspreset` | Mono legato and glide, an effects chain, an LFO and a full interface |
+| 1. Easy | `My First Instrument - Easy.dspreset` | Sample mapping, volume, attack and release |
+| 2. Medium | `My First Instrument - Medium.dspreset` | Round robins, the full ADSR envelope, a filter and reverb |
+| 3. Hard | `My First Instrument - Hard.dspreset` | More zones (10 notes × 3 takes), Mono legato and glide, an effects chain, an LFO and a full interface |
 
 Work through them in order. Each level adds new ideas to the one before.
 
@@ -49,7 +53,7 @@ Work through them in order. Each level adds new ideas to the one before.
   <groups>      ... which samples play on which keys ...  </groups>
   <effects>     ... filter, chorus, delay, reverb ...     </effects>
   <modulators>  ... LFOs that move things over time ...   </modulators>
-  <ui>          ... the knobs and text you see ...        </ui>
+  <ui>          ... the sliders and text you see        </ui>
 </DecentSampler>
 ```
 
@@ -60,7 +64,7 @@ Only `<groups>` is required. Everything else is optional.
 ## 1. Samples and mapping
 
 ```xml
-<sample rootNote="60" loNote="55" hiNote="66" path="Samples/DH WARP18/DH WARP18-C3-V127-O9JD.flac" />
+<sample rootNote="62" loNote="53" hiNote="62" path="Samples/DH WARP3/DH WARP3_062_RR1.flac" />
 ```
 
 | Attribute | Meaning |
@@ -189,49 +193,53 @@ An LFO (low-frequency oscillator) is a slow wave that moves a setting up and dow
 
 ## 8. The user interface
 
+The three "My First Instrument" presets use a plain white window at Decent Sampler's default size, **812 × 375** pixels, with one vertical slider per setting.
+
 ```xml
-<ui width="812" height="375" bgColor="FF14161F">
+<ui width="812" height="375" bgColor="FFFFFFFF">
   <tab name="main">
-    <rectangle x="16" y="68" width="480" height="142" fillColor="FF1E2230" />
-    <label x="28" y="74" width="300" height="18" text="AMP ENVELOPE" textColor="FF4FD1C5" />
-    <labeled-knob ...> <binding ... /> </labeled-knob>
+    <label x="24" y="16" width="600" height="30" text="My First Instrument - Hard" textColor="FF000000" textSize="18" />
+    <control ...> <binding ... /> </control>
+    <label ... text="Cutoff" textColor="FF000000" />
   </tab>
 </ui>
 ```
 
 ### Positions
-`x` and `y` are measured in pixels from the **top-left corner**. `width` and `height` set the size of the element.
+`x` and `y` are measured in pixels from the **top-left corner**. `width` and `height` set the size of the element. The on-screen keyboard covers the bottom of the window, so keep everything above about **y = 230**.
 
 ### Colours
-Colours are written as `AARRGGBB` hex codes:
+Colours are written as `AARRGGBB` hex codes. The first two characters are the opacity: `FF` is solid and `00` is invisible.
 
 | Code | Colour |
 |---|---|
-| `FFFFFFFF` | white |
-| `FF14161F` | very dark blue (the background) |
-| `FF4FD1C5` | teal |
-| `80FFFFFF` | white at 50% opacity (`80` is the alpha) |
+| `FFFFFFFF` | white (the background) |
+| `FF000000` | black (the text) |
+| `FF333333` | dark grey (the filled part of a slider) |
+| `FFDDDDDD` | light grey (the empty part of a slider) |
 
-The first two characters are the opacity: `FF` is solid and `00` is invisible.
+### Sliders: how a slider controls the sound
 
-### Knobs: how a knob controls the sound
-
-A knob does **nothing** on its own. It needs a `<binding>` inside it to tell it what to control:
+A slider does **nothing** on its own. It needs a `<binding>` inside it to tell it what to control. The name underneath it is a separate `<label>`, so you can always choose its colour:
 
 ```xml
-<labeled-knob x="562" y="96" width="80" height="106" label="Cutoff"
-              type="float" minValue="200" maxValue="20000" value="15000"
-              textColor="FFE8ECF5" trackForegroundColor="FFF6AD55">
+<control x="..." y="72" width="20" height="120" style="linear_bar_vertical"
+         parameterName="Cutoff" showLabel="false" type="float"
+         minValue="200" maxValue="20000" value="15000"
+         trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
   <binding type="effect" level="instrument" position="0" parameter="FX_FILTER_FREQUENCY" />
-</labeled-knob>
+</control>
+<label x="..." y="196" width="50" height="16" text="Cutoff" textColor="FF000000" hAlign="centred" />
 ```
 
 | Attribute | Meaning |
 |---|---|
-| `label` | The text shown under the knob |
-| `textColor` | Colour of that text. **Always set it**, or it can be invisible on a dark background. |
-| `minValue` / `maxValue` / `value` | The knob's range and starting value |
-| `trackForegroundColor` | Colour of the knob's arc |
+| `style` | `linear_bar_vertical` makes a vertical slider. Other styles: `linear_vertical`, `linear_horizontal`, `rotary_vertical_drag` (a knob). |
+| `parameterName` | The name your DAW shows for automation |
+| `minValue` / `maxValue` / `value` | The slider's range and starting value |
+| `trackForegroundColor` / `trackBackgroundColor` | The colours of the filled and empty parts |
+
+**One binding per group:** a setting that lives on a group, such as Attack or Release, needs one `<binding>` for **each** group. With 3 round-robin groups, use `position="0"`, `"1"` and `"2"`. If you only bind position 0, the slider changes just the first take.
 
 **Binding cheat sheet**
 
@@ -245,7 +253,7 @@ A knob does **nothing** on its own. It needs a `<binding>` inside it to tell it 
 | Delay level / feedback | `effect` | `instrument` | effect position | `FX_WET_LEVEL` / `FX_FEEDBACK` |
 | LFO depth | `modulator` | `instrument` | modulator position | `MOD_AMOUNT` |
 
-> **Common mistake:** if you add or move an effect, the position numbers change. Update the `position` in your knob bindings to match.
+> **Common mistake:** if you add or move an effect, the position numbers change. Update the `position` in your slider bindings to match.
 
 ---
 
@@ -277,6 +285,6 @@ Each file in `Example Code/` shows one idea on its own:
 |---|---|
 | No sound, or "file not found" | Check the `path`. It is relative to the `.dspreset` file. In the main folder, use `Samples/...`. Inside `Example Code/` or `Instrument Examples/`, use `../Samples/...`. Always use forward slashes `/`. |
 | Some keys are silent | There is a gap between zones. Check the `loNote` and `hiNote` values. |
-| A knob does nothing | It has no `<binding>`, or its `position` points at the wrong effect. |
-| You can't read the knob text | Add `textColor="FFFFFFFF"` to the knob. |
+| A slider does nothing | It has no `<binding>`, or its `position` points at the wrong effect or group. |
+| A slider only affects some notes | Add a binding for every group (`position` 0, 1, 2 …). |
 | The preset won't load at all | There is an XML typo, such as a missing `"`, a missing `/>` or an unclosed tag. |

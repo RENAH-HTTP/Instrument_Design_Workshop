@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DecentSampler minVersion="1.27.0">
-  <!-- MEDIUM: mapping + round robin + amp envelope. See README.md -->
+  <!-- MEDIUM: mapping + round robin + ADSR + filter + reverb. See README.md -->
 
   <!-- ============================ SAMPLES ============================ -->
   <groups seqMode="round_robin" seqLength="3" attack="0.01" decay="0.2" sustain="0.9" release="0.6" ampVelTrack="0.35">
@@ -27,53 +27,81 @@
     </group>
   </groups>
 
+  <!-- ============================ EFFECTS ============================ -->
+  <effects>
+    <effect type="lowpass" frequency="15000" resonance="0.7" />                 <!-- position 0 -->
+    <effect type="convolution" irFile="IR/Plate.flac" mix="0.2" />              <!-- position 1 -->
+  </effects>
+
   <!-- ========================= USER INTERFACE ======================== -->
-  <ui width="812" height="230" bgColor="FF14161F">
+  <ui width="812" height="375" bgColor="FFFFFFFF">
     <tab name="main">
-      <rectangle x="0" y="0" width="812" height="56" fillColor="FF1E2230" />
-      <rectangle x="0" y="54" width="812" height="2" fillColor="FF4FD1C5" />
-      <label x="20" y="8" width="500" height="26" text="MY FIRST INSTRUMENT"
-             textColor="FFFFFFFF" textSize="22" hAlign="left" />
-      <label x="20" y="32" width="560" height="18"
-             text="MEDIUM  ·  5 zones  ·  3 round robins  ·  ADSR envelope"
-             textColor="FF8A93AD" textSize="12" hAlign="left" />
-      <label x="600" y="18" width="192" height="20" text="LEVEL 2 / 3"
-             textColor="FF4FD1C5" textSize="14" hAlign="right" />
+      <label x="24" y="12" width="600" height="26" text="My First Instrument - Medium" textColor="FF000000" textSize="18" hAlign="left" />
 
-      <rectangle x="16" y="68" width="480" height="142" fillColor="FF1E2230" />
-      <label x="28" y="74" width="300" height="18" text="AMP ENVELOPE"
-             textColor="FF4FD1C5" textSize="13" hAlign="left" />
-
-      <labeled-knob x="26" y="96" width="80" height="106" label="Volume"
-                    type="float" minValue="0" maxValue="1" value="0.8"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+      <!-- Amp -->
+      <label x="24" y="50" width="250" height="18" text="Amp" textColor="FF666666" textSize="12" hAlign="left" />
+      <control x="39" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Volume" showLabel="false" type="float" minValue="0" maxValue="1" value="0.8"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="instrument" position="0" parameter="AMP_VOLUME" />
-      </labeled-knob>
-      <labeled-knob x="116" y="96" width="80" height="106" label="Attack"
-                    type="float" minValue="0" maxValue="5" value="0.01"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+      </control>
+      <label x="24" y="196" width="50" height="16" text="Volume" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="89" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Attack" showLabel="false" type="float" minValue="0" maxValue="5" value="0.01"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="group" position="0" parameter="ENV_ATTACK" />
-      </labeled-knob>
-      <labeled-knob x="206" y="96" width="80" height="106" label="Decay"
-                    type="float" minValue="0" maxValue="5" value="0.2"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+        <binding type="amp" level="group" position="1" parameter="ENV_ATTACK" />
+        <binding type="amp" level="group" position="2" parameter="ENV_ATTACK" />
+      </control>
+      <label x="74" y="196" width="50" height="16" text="Attack" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="139" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Decay" showLabel="false" type="float" minValue="0" maxValue="5" value="0.2"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="group" position="0" parameter="ENV_DECAY" />
-      </labeled-knob>
-      <labeled-knob x="296" y="96" width="80" height="106" label="Sustain"
-                    type="float" minValue="0" maxValue="1" value="0.9"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+        <binding type="amp" level="group" position="1" parameter="ENV_DECAY" />
+        <binding type="amp" level="group" position="2" parameter="ENV_DECAY" />
+      </control>
+      <label x="124" y="196" width="50" height="16" text="Decay" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="189" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Sustain" showLabel="false" type="float" minValue="0" maxValue="1" value="0.9"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="group" position="0" parameter="ENV_SUSTAIN" />
-      </labeled-knob>
-      <labeled-knob x="386" y="96" width="80" height="106" label="Release"
-                    type="float" minValue="0" maxValue="10" value="0.6"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+        <binding type="amp" level="group" position="1" parameter="ENV_SUSTAIN" />
+        <binding type="amp" level="group" position="2" parameter="ENV_SUSTAIN" />
+      </control>
+      <label x="174" y="196" width="50" height="16" text="Sustain" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="239" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Release" showLabel="false" type="float" minValue="0" maxValue="10" value="0.6"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="group" position="0" parameter="ENV_RELEASE" />
-      </labeled-knob>
+        <binding type="amp" level="group" position="1" parameter="ENV_RELEASE" />
+        <binding type="amp" level="group" position="2" parameter="ENV_RELEASE" />
+      </control>
+      <label x="224" y="196" width="50" height="16" text="Release" textColor="FF000000" textSize="11" hAlign="centred" />
+
+      <!-- Filter -->
+      <label x="290" y="50" width="100" height="18" text="Filter" textColor="FF666666" textSize="12" hAlign="left" />
+      <control x="305" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Cutoff" showLabel="false" type="float" minValue="200" maxValue="20000" value="15000"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
+        <binding type="effect" level="instrument" position="0" parameter="FX_FILTER_FREQUENCY" />
+      </control>
+      <label x="290" y="196" width="50" height="16" text="Cutoff" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="355" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Res" showLabel="false" type="float" minValue="0.1" maxValue="4" value="0.7"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
+        <binding type="effect" level="instrument" position="0" parameter="FX_FILTER_RESONANCE" />
+      </control>
+      <label x="340" y="196" width="50" height="16" text="Res" textColor="FF000000" textSize="11" hAlign="centred" />
+
+      <!-- Reverb -->
+      <label x="406" y="50" width="50" height="18" text="Reverb" textColor="FF666666" textSize="12" hAlign="left" />
+      <control x="421" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Mix" showLabel="false" type="float" minValue="0" maxValue="1" value="0.2"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
+        <binding type="effect" level="instrument" position="1" parameter="FX_MIX" />
+      </control>
+      <label x="406" y="196" width="50" height="16" text="Mix" textColor="FF000000" textSize="11" hAlign="centred" />
     </tab>
   </ui>
 </DecentSampler>

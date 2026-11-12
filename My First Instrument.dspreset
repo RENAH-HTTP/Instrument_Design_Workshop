@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <!-- MY FIRST INSTRUMENT: fill this in yourself. See README.md -->
+
+  <!-- ============================ SAMPLES ============================ -->
+  <groups>
+    <group>
+      <!-- <sample rootNote="" loNote="" hiNote="" path="Samples/..." /> -->
+    </group>
+  </groups>
+
+  <!-- ============================ EFFECTS ============================ -->
+  <effects>
+  </effects>
+
+  <!-- ========================= USER INTERFACE ======================== -->
+  <ui width="812" height="375" bgColor="FFFFFFFF">
+    <tab name="main">
+      <label x="24" y="12" width="600" height="26" text="My First Instrument" textColor="FF000000" textSize="18" hAlign="left" />
+    </tab>
+  </ui>
+</DecentSampler>

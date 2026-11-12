@@ -1,26 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DecentSampler minVersion="1.27.0">
-  <!-- HARD: round robin + legato + effects + LFO + full UI. See README.md -->
+  <!-- HARD: 10 zones x 3 round robins + legato + effects + LFO + full UI. See README.md -->
 
   <!-- ============================ SAMPLES ============================ -->
-  <groups polyphony="1" glideTime="0.08" glideMode="legato" returnToHeldNote="true" seqMode="round_robin" seqLength="2" attack="0.02" decay="0.3" sustain="0.8" release="0.8" ampVelTrack="0.5">
+  <groups polyphony="1" glideTime="0.08" glideMode="legato" returnToHeldNote="true" seqMode="round_robin" seqLength="3" attack="0.02" decay="0.3" sustain="0.8" release="0.8" ampVelTrack="0.5">
     <group seqPosition="1">
-      <sample rootNote="24" loNote="0" hiNote="30" path="Samples/DH WARP18/DH WARP18-C0-V127-O9LJ.flac" />
-      <sample rootNote="36" loNote="31" hiNote="42" path="Samples/DH WARP18/DH WARP18-C1-V127-R79M.flac" />
-      <sample rootNote="48" loNote="43" hiNote="54" path="Samples/DH WARP18/DH WARP18-C2-V127-D8ZV.flac" />
-      <sample rootNote="60" loNote="55" hiNote="66" path="Samples/DH WARP18/DH WARP18-C3-V127-O9JD.flac" />
-      <sample rootNote="72" loNote="67" hiNote="78" path="Samples/DH WARP18/DH WARP18-C4-V127-OY8E.flac" />
-      <sample rootNote="84" loNote="79" hiNote="90" path="Samples/DH WARP18/DH WARP18-C5-V127-92KG.flac" />
-      <sample rootNote="96" loNote="91" hiNote="127" path="Samples/DH WARP18/DH WARP18-C6-V127-ED8C.flac" />
+      <sample rootNote="52" loNote="0" hiNote="57" path="Samples/DH WARP3/DH WARP3_052_RR1.flac" />
+      <sample rootNote="62" loNote="58" hiNote="63" path="Samples/DH WARP3/DH WARP3_062_RR1.flac" />
+      <sample rootNote="64" loNote="64" hiNote="65" path="Samples/DH WARP3/DH WARP3_064_RR1.flac" />
+      <sample rootNote="67" loNote="66" hiNote="69" path="Samples/DH WARP3/DH WARP3_067_RR1.flac" />
+      <sample rootNote="71" loNote="70" hiNote="72" path="Samples/DH WARP3/DH WARP3_071_RR1.flac" />
+      <sample rootNote="74" loNote="73" hiNote="75" path="Samples/DH WARP3/DH WARP3_074_RR1.flac" />
+      <sample rootNote="76" loNote="76" hiNote="77" path="Samples/DH WARP3/DH WARP3_076_RR1.flac" />
+      <sample rootNote="78" loNote="78" hiNote="80" path="Samples/DH WARP3/DH WARP3_078_RR1.flac" />
+      <sample rootNote="83" loNote="81" hiNote="89" path="Samples/DH WARP3/DH WARP3_083_RR1.flac" />
+      <sample rootNote="96" loNote="90" hiNote="127" path="Samples/DH WARP3/DH WARP3_096_RR1.flac" />
     </group>
     <group seqPosition="2">
-      <sample rootNote="24" loNote="0" hiNote="30" path="Samples/DH WARP18/DH WARP18-C0-V127-ZOOQ.flac" />
-      <sample rootNote="36" loNote="31" hiNote="42" path="Samples/DH WARP18/DH WARP18-C1-V127-U4H7.flac" />
-      <sample rootNote="48" loNote="43" hiNote="54" path="Samples/DH WARP18/DH WARP18-C2-V127-LJBG.flac" />
-      <sample rootNote="60" loNote="55" hiNote="66" path="Samples/DH WARP18/DH WARP18-C3-V127-UXZK.flac" />
-      <sample rootNote="72" loNote="67" hiNote="78" path="Samples/DH WARP18/DH WARP18-C4-V127-Q8G6.flac" />
-      <sample rootNote="84" loNote="79" hiNote="90" path="Samples/DH WARP18/DH WARP18-C5-V127-AC6S.flac" />
-      <sample rootNote="96" loNote="91" hiNote="127" path="Samples/DH WARP18/DH WARP18-C6-V127-X2WQ.flac" />
+      <sample rootNote="52" loNote="0" hiNote="57" path="Samples/DH WARP3/DH WARP3_052_RR2.flac" />
+      <sample rootNote="62" loNote="58" hiNote="63" path="Samples/DH WARP3/DH WARP3_062_RR2.flac" />
+      <sample rootNote="64" loNote="64" hiNote="65" path="Samples/DH WARP3/DH WARP3_064_RR2.flac" />
+      <sample rootNote="67" loNote="66" hiNote="69" path="Samples/DH WARP3/DH WARP3_067_RR2.flac" />
+      <sample rootNote="71" loNote="70" hiNote="72" path="Samples/DH WARP3/DH WARP3_071_RR2.flac" />
+      <sample rootNote="74" loNote="73" hiNote="75" path="Samples/DH WARP3/DH WARP3_074_RR2.flac" />
+      <sample rootNote="76" loNote="76" hiNote="77" path="Samples/DH WARP3/DH WARP3_076_RR2.flac" />
+      <sample rootNote="78" loNote="78" hiNote="80" path="Samples/DH WARP3/DH WARP3_078_RR2.flac" />
+      <sample rootNote="83" loNote="81" hiNote="89" path="Samples/DH WARP3/DH WARP3_083_RR2.flac" />
+      <sample rootNote="96" loNote="90" hiNote="127" path="Samples/DH WARP3/DH WARP3_096_RR2.flac" />
+    </group>
+    <group seqPosition="3">
+      <sample rootNote="52" loNote="0" hiNote="57" path="Samples/DH WARP3/DH WARP3_052_RR3.flac" />
+      <sample rootNote="62" loNote="58" hiNote="63" path="Samples/DH WARP3/DH WARP3_062_RR3.flac" />
+      <sample rootNote="64" loNote="64" hiNote="65" path="Samples/DH WARP3/DH WARP3_064_RR3.flac" />
+      <sample rootNote="67" loNote="66" hiNote="69" path="Samples/DH WARP3/DH WARP3_067_RR3.flac" />
+      <sample rootNote="71" loNote="70" hiNote="72" path="Samples/DH WARP3/DH WARP3_071_RR3.flac" />
+      <sample rootNote="74" loNote="73" hiNote="75" path="Samples/DH WARP3/DH WARP3_074_RR3.flac" />
+      <sample rootNote="76" loNote="76" hiNote="77" path="Samples/DH WARP3/DH WARP3_076_RR3.flac" />
+      <sample rootNote="78" loNote="78" hiNote="80" path="Samples/DH WARP3/DH WARP3_078_RR3.flac" />
+      <sample rootNote="83" loNote="81" hiNote="89" path="Samples/DH WARP3/DH WARP3_083_RR3.flac" />
+      <sample rootNote="96" loNote="90" hiNote="127" path="Samples/DH WARP3/DH WARP3_096_RR3.flac" />
     </group>
   </groups>
 
@@ -40,134 +58,129 @@
       <binding type="general" level="group" position="0" parameter="GROUP_TUNING"
                modBehavior="add" translation="linear"
                translationOutputMin="0" translationOutputMax="0.5" />
+      <binding type="general" level="group" position="1" parameter="GROUP_TUNING"
+               modBehavior="add" translation="linear"
+               translationOutputMin="0" translationOutputMax="0.5" />
+      <binding type="general" level="group" position="2" parameter="GROUP_TUNING"
+               modBehavior="add" translation="linear"
+               translationOutputMin="0" translationOutputMax="0.5" />
     </lfo>
   </modulators>
 
   <!-- ========================= USER INTERFACE ======================== -->
-  <ui width="812" height="375" bgColor="FF14161F">
+  <ui width="812" height="375" bgColor="FFFFFFFF">
     <tab name="main">
+      <label x="24" y="12" width="600" height="26" text="My First Instrument - Hard" textColor="FF000000" textSize="18" hAlign="left" />
 
-      <!-- Header -->
-      <rectangle x="0" y="0" width="812" height="56" fillColor="FF1E2230" />
-      <rectangle x="0" y="54" width="812" height="2" fillColor="FF4FD1C5" />
-      <label x="20" y="8" width="500" height="26" text="MY FIRST INSTRUMENT"
-             textColor="FFFFFFFF" textSize="22" hAlign="left" />
-      <label x="20" y="32" width="560" height="18"
-             text="HARD  ·  7 zones  ·  2 round robins  ·  mono legato  ·  5-effect chain"
-             textColor="FF8A93AD" textSize="12" hAlign="left" />
-      <label x="600" y="18" width="192" height="20" text="LEVEL 3 / 3"
-             textColor="FF4FD1C5" textSize="14" hAlign="right" />
-
-      <!-- ========== Panel 1: AMP ENVELOPE ========== -->
-      <rectangle x="16" y="68" width="480" height="142" fillColor="FF1E2230" />
-      <label x="28" y="74" width="300" height="18" text="AMP ENVELOPE"
-             textColor="FF4FD1C5" textSize="13" hAlign="left" />
-
-      <labeled-knob x="26" y="96" width="80" height="106" label="Volume"
-                    type="float" minValue="0" maxValue="1" value="0.8"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+      <!-- Amp -->
+      <label x="24" y="50" width="250" height="18" text="Amp" textColor="FF666666" textSize="12" hAlign="left" />
+      <control x="39" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Volume" showLabel="false" type="float" minValue="0" maxValue="1" value="0.8"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="instrument" position="0" parameter="AMP_VOLUME" />
-      </labeled-knob>
-      <labeled-knob x="116" y="96" width="80" height="106" label="Attack"
-                    type="float" minValue="0" maxValue="5" value="0.02"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+      </control>
+      <label x="24" y="196" width="50" height="16" text="Volume" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="89" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Attack" showLabel="false" type="float" minValue="0" maxValue="5" value="0.02"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="group" position="0" parameter="ENV_ATTACK" />
-      </labeled-knob>
-      <labeled-knob x="206" y="96" width="80" height="106" label="Decay"
-                    type="float" minValue="0" maxValue="5" value="0.3"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+        <binding type="amp" level="group" position="1" parameter="ENV_ATTACK" />
+        <binding type="amp" level="group" position="2" parameter="ENV_ATTACK" />
+      </control>
+      <label x="74" y="196" width="50" height="16" text="Attack" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="139" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Decay" showLabel="false" type="float" minValue="0" maxValue="5" value="0.3"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="group" position="0" parameter="ENV_DECAY" />
-      </labeled-knob>
-      <labeled-knob x="296" y="96" width="80" height="106" label="Sustain"
-                    type="float" minValue="0" maxValue="1" value="0.8"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+        <binding type="amp" level="group" position="1" parameter="ENV_DECAY" />
+        <binding type="amp" level="group" position="2" parameter="ENV_DECAY" />
+      </control>
+      <label x="124" y="196" width="50" height="16" text="Decay" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="189" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Sustain" showLabel="false" type="float" minValue="0" maxValue="1" value="0.8"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="group" position="0" parameter="ENV_SUSTAIN" />
-      </labeled-knob>
-      <labeled-knob x="386" y="96" width="80" height="106" label="Release"
-                    type="float" minValue="0" maxValue="10" value="0.8"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FF4FD1C5" trackBackgroundColor="FF2E3446">
+        <binding type="amp" level="group" position="1" parameter="ENV_SUSTAIN" />
+        <binding type="amp" level="group" position="2" parameter="ENV_SUSTAIN" />
+      </control>
+      <label x="174" y="196" width="50" height="16" text="Sustain" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="239" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Release" showLabel="false" type="float" minValue="0" maxValue="10" value="0.8"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="amp" level="group" position="0" parameter="ENV_RELEASE" />
-      </labeled-knob>
+        <binding type="amp" level="group" position="1" parameter="ENV_RELEASE" />
+        <binding type="amp" level="group" position="2" parameter="ENV_RELEASE" />
+      </control>
+      <label x="224" y="196" width="50" height="16" text="Release" textColor="FF000000" textSize="11" hAlign="centred" />
 
-      <!-- ========== Panel 2: TONE (lowpass filter, effect position 0) ========== -->
-      <rectangle x="508" y="68" width="288" height="142" fillColor="FF1E2230" />
-      <label x="520" y="74" width="260" height="18" text="TONE  ·  LOW-PASS FILTER"
-             textColor="FFF6AD55" textSize="13" hAlign="left" />
-
-      <labeled-knob x="562" y="96" width="80" height="106" label="Cutoff"
-                    type="float" minValue="200" maxValue="20000" value="15000"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FFF6AD55" trackBackgroundColor="FF2E3446">
+      <!-- Filter -->
+      <label x="290" y="50" width="100" height="18" text="Filter" textColor="FF666666" textSize="12" hAlign="left" />
+      <control x="305" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Cutoff" showLabel="false" type="float" minValue="200" maxValue="20000" value="15000"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="effect" level="instrument" position="0" parameter="FX_FILTER_FREQUENCY" />
-      </labeled-knob>
-      <labeled-knob x="662" y="96" width="80" height="106" label="Resonance"
-                    type="float" minValue="0.1" maxValue="4" value="0.7"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FFF6AD55" trackBackgroundColor="FF2E3446">
+      </control>
+      <label x="290" y="196" width="50" height="16" text="Cutoff" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="355" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Res" showLabel="false" type="float" minValue="0.1" maxValue="4" value="0.7"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="effect" level="instrument" position="0" parameter="FX_FILTER_RESONANCE" />
-      </labeled-knob>
+      </control>
+      <label x="340" y="196" width="50" height="16" text="Res" textColor="FF000000" textSize="11" hAlign="centred" />
 
-      <!-- ========== Panel 3: SPACE (chorus 1, delay 2, reverb 3) ========== -->
-      <rectangle x="16" y="220" width="480" height="142" fillColor="FF1E2230" />
-      <label x="28" y="226" width="300" height="18" text="SPACE  ·  CHORUS / DELAY / REVERB"
-             textColor="FFB794F4" textSize="13" hAlign="left" />
-
-      <labeled-knob x="26" y="248" width="80" height="106" label="Chorus"
-                    type="float" minValue="0" maxValue="1" value="0.18"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FFB794F4" trackBackgroundColor="FF2E3446">
+      <!-- Chorus -->
+      <label x="406" y="50" width="150" height="18" text="Chorus" textColor="FF666666" textSize="12" hAlign="left" />
+      <control x="421" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Mix" showLabel="false" type="float" minValue="0" maxValue="1" value="0.18"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="effect" level="instrument" position="1" parameter="FX_MIX" />
-      </labeled-knob>
-      <labeled-knob x="116" y="248" width="80" height="106" label="Ch. Rate"
-                    type="float" minValue="0.01" maxValue="5" value="0.2"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FFB794F4" trackBackgroundColor="FF2E3446">
+      </control>
+      <label x="406" y="196" width="50" height="16" text="Mix" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="471" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Rate" showLabel="false" type="float" minValue="0.01" maxValue="5" value="0.2"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="effect" level="instrument" position="1" parameter="FX_MOD_RATE" />
-      </labeled-knob>
-      <labeled-knob x="206" y="248" width="80" height="106" label="Delay"
-                    type="float" minValue="0" maxValue="1" value="0.15"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FFB794F4" trackBackgroundColor="FF2E3446">
+      </control>
+      <label x="456" y="196" width="50" height="16" text="Rate" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="521" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Depth" showLabel="false" type="float" minValue="0" maxValue="1" value="0.2"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
+        <binding type="effect" level="instrument" position="1" parameter="FX_MOD_DEPTH" />
+      </control>
+      <label x="506" y="196" width="50" height="16" text="Depth" textColor="FF000000" textSize="11" hAlign="centred" />
+
+      <!-- Delay -->
+      <label x="572" y="50" width="100" height="18" text="Delay" textColor="FF666666" textSize="12" hAlign="left" />
+      <control x="587" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Mix" showLabel="false" type="float" minValue="0" maxValue="1" value="0.15"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="effect" level="instrument" position="2" parameter="FX_WET_LEVEL" />
-      </labeled-knob>
-      <labeled-knob x="296" y="248" width="80" height="106" label="Feedback"
-                    type="float" minValue="0" maxValue="0.9" value="0.3"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FFB794F4" trackBackgroundColor="FF2E3446">
+      </control>
+      <label x="572" y="196" width="50" height="16" text="Mix" textColor="FF000000" textSize="11" hAlign="centred" />
+      <control x="637" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Feedback" showLabel="false" type="float" minValue="0" maxValue="0.9" value="0.3"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="effect" level="instrument" position="2" parameter="FX_FEEDBACK" />
-      </labeled-knob>
-      <labeled-knob x="386" y="248" width="80" height="106" label="Reverb"
-                    type="float" minValue="0" maxValue="1" value="0.2"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FFB794F4" trackBackgroundColor="FF2E3446">
+      </control>
+      <label x="622" y="196" width="50" height="16" text="Feedback" textColor="FF000000" textSize="11" hAlign="centred" />
+
+      <!-- Reverb -->
+      <label x="688" y="50" width="50" height="18" text="Reverb" textColor="FF666666" textSize="12" hAlign="left" />
+      <control x="703" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Mix" showLabel="false" type="float" minValue="0" maxValue="1" value="0.2"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="effect" level="instrument" position="3" parameter="FX_MIX" />
-      </labeled-knob>
+      </control>
+      <label x="688" y="196" width="50" height="16" text="Mix" textColor="FF000000" textSize="11" hAlign="centred" />
 
-      <!-- ========== Panel 4: MOTION (LFO, modulator position 0) ========== -->
-      <rectangle x="508" y="220" width="288" height="142" fillColor="FF1E2230" />
-      <label x="520" y="226" width="260" height="18" text="MOTION  ·  LFO"
-             textColor="FFF687B3" textSize="13" hAlign="left" />
-
-      <labeled-knob x="518" y="248" width="80" height="106" label="Vibrato"
-                    type="float" minValue="0" maxValue="1" value="0.2"
-                    textColor="FFE8ECF5" textSize="13"
-                    trackForegroundColor="FFF687B3" trackBackgroundColor="FF2E3446">
+      <!-- LFO -->
+      <label x="754" y="50" width="50" height="18" text="LFO" textColor="FF666666" textSize="12" hAlign="left" />
+      <control x="769" y="72" width="20" height="120" style="linear_bar_vertical"
+               parameterName="Vibrato" showLabel="false" type="float" minValue="0" maxValue="1" value="0.2"
+               trackForegroundColor="FF333333" trackBackgroundColor="FFDDDDDD">
         <binding type="modulator" level="instrument" position="0" parameter="MOD_AMOUNT" />
-      </labeled-knob>
-      <label x="608" y="256" width="178" height="18" text="Sine LFO at 5 Hz"
-             textColor="FFE8ECF5" textSize="12" hAlign="left" />
-      <label x="608" y="276" width="178" height="18" text="wobbles the pitch."
-             textColor="FF8A93AD" textSize="12" hAlign="left" />
-      <label x="608" y="304" width="178" height="18" text="Play legato: notes glide"
-             textColor="FF8A93AD" textSize="12" hAlign="left" />
-      <label x="608" y="322" width="178" height="18" text="into each other (mono)."
-             textColor="FF8A93AD" textSize="12" hAlign="left" />
-
+      </control>
+      <label x="754" y="196" width="50" height="16" text="Vibrato" textColor="FF000000" textSize="11" hAlign="centred" />
     </tab>
   </ui>
 </DecentSampler>
