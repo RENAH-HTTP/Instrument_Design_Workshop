@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <!-- THEODOR: 5 zones x 2 round-robin takes. See README.md -->
+
+  <!-- ============================ SAMPLES ============================ -->
+  <groups seqMode="round_robin" seqLength="2" attack="0.0" release="0.48" ampVelTrack="0.5">
+    <group seqPosition="1">
+      <sample rootNote="47" loNote="0"  hiNote="47"  path="Samples/BasitarPlucks/BasitarPlucks_047_RR1.flac" />
+      <sample rootNote="54" loNote="48" hiNote="54"  path="Samples/BasitarPlucks/BasitarPlucks_054_RR1.flac" />
+      <sample rootNote="59" loNote="55" hiNote="59"  path="Samples/BasitarPlucks/BasitarPlucks_059_RR1.flac" />
+      <sample rootNote="61" loNote="60" hiNote="61"  path="Samples/BasitarPlucks/BasitarPlucks_061_RR1.flac" />
+      <sample rootNote="66" loNote="62" hiNote="127" path="Samples/BasitarPlucks/BasitarPlucks_066_RR1.flac" />
+    </group>
+    <group seqPosition="2">
+      <sample rootNote="47" loNote="0"  hiNote="47"  path="Samples/BasitarPlucks/BasitarPlucks_047_RR2.flac" />
+      <sample rootNote="54" loNote="48" hiNote="54"  path="Samples/BasitarPlucks/BasitarPlucks_054_RR2.flac" />
+      <sample rootNote="59" loNote="55" hiNote="59"  path="Samples/BasitarPlucks/BasitarPlucks_059_RR2.flac" />
+      <sample rootNote="61" loNote="60" hiNote="61"  path="Samples/BasitarPlucks/BasitarPlucks_061_RR2.flac" />
+      <sample rootNote="66" loNote="62" hiNote="127" path="Samples/BasitarPlucks/BasitarPlucks_066_RR2.flac" />
+    </group>
+  </groups>
+</DecentSampler>

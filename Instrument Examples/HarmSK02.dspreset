@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DecentSampler minVersion="1.27.0">
-  <groups>
-    <group loVel="1" hiVel="127" seqMode="round_robin" seqLength="1" attack="0.0" decay="0.0" sustain="1.0" release="0.48" ampVelTrack="0.2">
-      <sample rootNote="36" loNote="24" hiNote="36" path="Samples\HarmSK02\HarmSK02-C1-V127-3XIH.flac" seqPosition="1"/>
-      <sample rootNote="48" loNote="37" hiNote="48" path="Samples\HarmSK02\HarmSK02-C2-V127-2L2N.flac" seqPosition="1"/>
-      <sample rootNote="60" loNote="49" hiNote="60" path="Samples\HarmSK02\HarmSK02-C3-V127-AJI5.flac" seqPosition="1"/>
-      <sample rootNote="72" loNote="61" hiNote="72" path="Samples\HarmSK02\HarmSK02-C4-V127-QKOA.flac" seqPosition="1"/>
-      <sample rootNote="84" loNote="73" hiNote="84" path="Samples\HarmSK02\HarmSK02-C5-V127-MI9A.flac" seqPosition="1"/>
-      <sample rootNote="96" loNote="85" hiNote="96" path="Samples\HarmSK02\HarmSK02-C6-V127-GSYJ.flac" seqPosition="1"/>
-      <sample rootNote="108" loNote="97" hiNote="108" path="Samples\HarmSK02\HarmSK02-C7-V127-BIWE.flac" seqPosition="1"/>
+  <groups attack="0.0" decay="0.0" sustain="1.0" release="0.48" ampVelTrack="0.2">
+    <group>
+      <sample rootNote="36" loNote="0" hiNote="36" path="../Samples/HarmSK02/HarmSK02-C1-V127-3XIH.flac" />
+      <sample rootNote="48" loNote="37" hiNote="48" path="../Samples/HarmSK02/HarmSK02-C2-V127-2L2N.flac" />
+      <sample rootNote="60" loNote="49" hiNote="60" path="../Samples/HarmSK02/HarmSK02-C3-V127-AJI5.flac" />
+      <sample rootNote="72" loNote="61" hiNote="72" path="../Samples/HarmSK02/HarmSK02-C4-V127-QKOA.flac" />
+      <sample rootNote="84" loNote="73" hiNote="84" path="../Samples/HarmSK02/HarmSK02-C5-V127-MI9A.flac" />
+      <sample rootNote="96" loNote="85" hiNote="96" path="../Samples/HarmSK02/HarmSK02-C6-V127-GSYJ.flac" />
+      <sample rootNote="108" loNote="97" hiNote="127" path="../Samples/HarmSK02/HarmSK02-C7-V127-BIWE.flac" />
     </group>
   </groups>
   <ui>

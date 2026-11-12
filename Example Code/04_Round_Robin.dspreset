@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DecentSampler minVersion="1.27.0">
-  <groups>
-    <group loVel="1" hiVel="127" seqMode="round_robin" seqLength="3">
-      <!-- Three alternate takes of the same note. -->
-      <sample rootNote="47" loNote="24" hiNote="127"
-              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR1.flac"
-              seqPosition="1" />
-      <sample rootNote="47" loNote="24" hiNote="127"
-              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR2.flac"
-              seqPosition="2" />
-      <sample rootNote="47" loNote="24" hiNote="127"
-              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR3.flac"
-              seqPosition="3" />
+  <groups seqMode="round_robin" seqLength="3">
+    <group seqPosition="1">
+      <sample rootNote="47" loNote="0" hiNote="127" path="../Samples/BasitarPlucks/BasitarPlucks_047_RR1.flac" />
+    </group>
+    <group seqPosition="2">
+      <sample rootNote="47" loNote="0" hiNote="127" path="../Samples/BasitarPlucks/BasitarPlucks_047_RR2.flac" />
+    </group>
+    <group seqPosition="3">
+      <sample rootNote="47" loNote="0" hiNote="127" path="../Samples/BasitarPlucks/BasitarPlucks_047_RR3.flac" />
     </group>
   </groups>
 </DecentSampler>

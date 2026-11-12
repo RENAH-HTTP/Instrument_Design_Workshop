@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DecentSampler minVersion="1.27.0">
-  <groups>
-    <group loVel="1" hiVel="127" seqMode="round_robin" seqLength="3" attack="0.0" decay="0.0" sustain="1.0" release="0.48" ampVelTrack="0.2">
-      <sample rootNote="52" loNote="24" hiNote="52" path="Samples\DH WARP3\DH WARP3_052_RR1.flac" seqPosition="1"/>
-      <sample rootNote="62" loNote="53" hiNote="62" path="Samples\DH WARP3\DH WARP3_062_RR1.flac" seqPosition="1"/>
-      <sample rootNote="64" loNote="63" hiNote="64" path="Samples\DH WARP3\DH WARP3_064_RR1.flac" seqPosition="1"/>
-      <sample rootNote="67" loNote="65" hiNote="67" path="Samples\DH WARP3\DH WARP3_067_RR1.flac" seqPosition="1"/>
-      <sample rootNote="71" loNote="68" hiNote="71" path="Samples\DH WARP3\DH WARP3_071_RR1.flac" seqPosition="1"/>
-      <sample rootNote="74" loNote="72" hiNote="74" path="Samples\DH WARP3\DH WARP3_074_RR1.flac" seqPosition="1"/>
-      <sample rootNote="76" loNote="75" hiNote="76" path="Samples\DH WARP3\DH WARP3_076_RR1.flac" seqPosition="1"/>
-      <sample rootNote="78" loNote="77" hiNote="78" path="Samples\DH WARP3\DH WARP3_078_RR1.flac" seqPosition="1"/>
-      <sample rootNote="83" loNote="79" hiNote="83" path="Samples\DH WARP3\DH WARP3_083_RR1.flac" seqPosition="1"/>
-      <sample rootNote="96" loNote="84" hiNote="96" path="Samples\DH WARP3\DH WARP3_096_RR1.flac" seqPosition="1"/>
-      <sample rootNote="52" loNote="24" hiNote="52" path="Samples\DH WARP3\DH WARP3_052_RR2.flac" seqPosition="2"/>
-      <sample rootNote="62" loNote="53" hiNote="62" path="Samples\DH WARP3\DH WARP3_062_RR2.flac" seqPosition="2"/>
-      <sample rootNote="64" loNote="63" hiNote="64" path="Samples\DH WARP3\DH WARP3_064_RR2.flac" seqPosition="2"/>
-      <sample rootNote="67" loNote="65" hiNote="67" path="Samples\DH WARP3\DH WARP3_067_RR2.flac" seqPosition="2"/>
-      <sample rootNote="71" loNote="68" hiNote="71" path="Samples\DH WARP3\DH WARP3_071_RR2.flac" seqPosition="2"/>
-      <sample rootNote="74" loNote="72" hiNote="74" path="Samples\DH WARP3\DH WARP3_074_RR2.flac" seqPosition="2"/>
-      <sample rootNote="76" loNote="75" hiNote="76" path="Samples\DH WARP3\DH WARP3_076_RR2.flac" seqPosition="2"/>
-      <sample rootNote="78" loNote="77" hiNote="78" path="Samples\DH WARP3\DH WARP3_078_RR2.flac" seqPosition="2"/>
-      <sample rootNote="83" loNote="79" hiNote="83" path="Samples\DH WARP3\DH WARP3_083_RR2.flac" seqPosition="2"/>
-      <sample rootNote="96" loNote="84" hiNote="96" path="Samples\DH WARP3\DH WARP3_096_RR2.flac" seqPosition="2"/>
-      <sample rootNote="52" loNote="24" hiNote="52" path="Samples\DH WARP3\DH WARP3_052_RR3.flac" seqPosition="3"/>
-      <sample rootNote="62" loNote="53" hiNote="62" path="Samples\DH WARP3\DH WARP3_062_RR3.flac" seqPosition="3"/>
-      <sample rootNote="64" loNote="63" hiNote="64" path="Samples\DH WARP3\DH WARP3_064_RR3.flac" seqPosition="3"/>
-      <sample rootNote="67" loNote="65" hiNote="67" path="Samples\DH WARP3\DH WARP3_067_RR3.flac" seqPosition="3"/>
-      <sample rootNote="71" loNote="68" hiNote="71" path="Samples\DH WARP3\DH WARP3_071_RR3.flac" seqPosition="3"/>
-      <sample rootNote="74" loNote="72" hiNote="74" path="Samples\DH WARP3\DH WARP3_074_RR3.flac" seqPosition="3"/>
-      <sample rootNote="76" loNote="75" hiNote="76" path="Samples\DH WARP3\DH WARP3_076_RR3.flac" seqPosition="3"/>
-      <sample rootNote="78" loNote="77" hiNote="78" path="Samples\DH WARP3\DH WARP3_078_RR3.flac" seqPosition="3"/>
-      <sample rootNote="83" loNote="79" hiNote="83" path="Samples\DH WARP3\DH WARP3_083_RR3.flac" seqPosition="3"/>
-      <sample rootNote="96" loNote="84" hiNote="96" path="Samples\DH WARP3\DH WARP3_096_RR3.flac" seqPosition="3"/>
+  <groups seqMode="round_robin" seqLength="3" attack="0.0" decay="0.0" sustain="1.0" release="0.48" ampVelTrack="0.2">
+    <group seqPosition="1">
+      <sample rootNote="52" loNote="0" hiNote="52" path="../Samples/DH WARP3/DH WARP3_052_RR1.flac" />
+      <sample rootNote="62" loNote="53" hiNote="62" path="../Samples/DH WARP3/DH WARP3_062_RR1.flac" />
+      <sample rootNote="64" loNote="63" hiNote="64" path="../Samples/DH WARP3/DH WARP3_064_RR1.flac" />
+      <sample rootNote="67" loNote="65" hiNote="67" path="../Samples/DH WARP3/DH WARP3_067_RR1.flac" />
+      <sample rootNote="71" loNote="68" hiNote="71" path="../Samples/DH WARP3/DH WARP3_071_RR1.flac" />
+      <sample rootNote="74" loNote="72" hiNote="74" path="../Samples/DH WARP3/DH WARP3_074_RR1.flac" />
+      <sample rootNote="76" loNote="75" hiNote="76" path="../Samples/DH WARP3/DH WARP3_076_RR1.flac" />
+      <sample rootNote="78" loNote="77" hiNote="78" path="../Samples/DH WARP3/DH WARP3_078_RR1.flac" />
+      <sample rootNote="83" loNote="79" hiNote="83" path="../Samples/DH WARP3/DH WARP3_083_RR1.flac" />
+      <sample rootNote="96" loNote="84" hiNote="127" path="../Samples/DH WARP3/DH WARP3_096_RR1.flac" />
+    </group>
+    <group seqPosition="2">
+      <sample rootNote="52" loNote="0" hiNote="52" path="../Samples/DH WARP3/DH WARP3_052_RR2.flac" />
+      <sample rootNote="62" loNote="53" hiNote="62" path="../Samples/DH WARP3/DH WARP3_062_RR2.flac" />
+      <sample rootNote="64" loNote="63" hiNote="64" path="../Samples/DH WARP3/DH WARP3_064_RR2.flac" />
+      <sample rootNote="67" loNote="65" hiNote="67" path="../Samples/DH WARP3/DH WARP3_067_RR2.flac" />
+      <sample rootNote="71" loNote="68" hiNote="71" path="../Samples/DH WARP3/DH WARP3_071_RR2.flac" />
+      <sample rootNote="74" loNote="72" hiNote="74" path="../Samples/DH WARP3/DH WARP3_074_RR2.flac" />
+      <sample rootNote="76" loNote="75" hiNote="76" path="../Samples/DH WARP3/DH WARP3_076_RR2.flac" />
+      <sample rootNote="78" loNote="77" hiNote="78" path="../Samples/DH WARP3/DH WARP3_078_RR2.flac" />
+      <sample rootNote="83" loNote="79" hiNote="83" path="../Samples/DH WARP3/DH WARP3_083_RR2.flac" />
+      <sample rootNote="96" loNote="84" hiNote="127" path="../Samples/DH WARP3/DH WARP3_096_RR2.flac" />
+    </group>
+    <group seqPosition="3">
+      <sample rootNote="52" loNote="0" hiNote="52" path="../Samples/DH WARP3/DH WARP3_052_RR3.flac" />
+      <sample rootNote="62" loNote="53" hiNote="62" path="../Samples/DH WARP3/DH WARP3_062_RR3.flac" />
+      <sample rootNote="64" loNote="63" hiNote="64" path="../Samples/DH WARP3/DH WARP3_064_RR3.flac" />
+      <sample rootNote="67" loNote="65" hiNote="67" path="../Samples/DH WARP3/DH WARP3_067_RR3.flac" />
+      <sample rootNote="71" loNote="68" hiNote="71" path="../Samples/DH WARP3/DH WARP3_071_RR3.flac" />
+      <sample rootNote="74" loNote="72" hiNote="74" path="../Samples/DH WARP3/DH WARP3_074_RR3.flac" />
+      <sample rootNote="76" loNote="75" hiNote="76" path="../Samples/DH WARP3/DH WARP3_076_RR3.flac" />
+      <sample rootNote="78" loNote="77" hiNote="78" path="../Samples/DH WARP3/DH WARP3_078_RR3.flac" />
+      <sample rootNote="83" loNote="79" hiNote="83" path="../Samples/DH WARP3/DH WARP3_083_RR3.flac" />
+      <sample rootNote="96" loNote="84" hiNote="127" path="../Samples/DH WARP3/DH WARP3_096_RR3.flac" />
     </group>
   </groups>
   <ui>

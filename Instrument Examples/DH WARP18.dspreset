@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DecentSampler minVersion="1.27.0">
-  <groups>
-    <group loVel="1" hiVel="127" seqMode="round_robin" seqLength="2" attack="0.0" decay="0.0" sustain="1.0" release="0.48" ampVelTrack="0.2">
-      <sample rootNote="24" loNote="24" hiNote="24" path="Samples\DH WARP18\DH WARP18-C0-V127-O9LJ.flac" seqPosition="1"/>
-      <sample rootNote="30" loNote="25" hiNote="30" path="Samples\DH WARP18\DH WARP18-F#0-V127-0UXZ.flac" seqPosition="1"/>
-      <sample rootNote="36" loNote="31" hiNote="36" path="Samples\DH WARP18\DH WARP18-C1-V127-R79M.flac" seqPosition="1"/>
-      <sample rootNote="42" loNote="37" hiNote="42" path="Samples\DH WARP18\DH WARP18-F#1-V127-HW8S.flac" seqPosition="1"/>
-      <sample rootNote="48" loNote="43" hiNote="48" path="Samples\DH WARP18\DH WARP18-C2-V127-D8ZV.flac" seqPosition="1"/>
-      <sample rootNote="54" loNote="49" hiNote="54" path="Samples\DH WARP18\DH WARP18-F#2-V127-6B7M.flac" seqPosition="1"/>
-      <sample rootNote="60" loNote="55" hiNote="60" path="Samples\DH WARP18\DH WARP18-C3-V127-O9JD.flac" seqPosition="1"/>
-      <sample rootNote="66" loNote="61" hiNote="66" path="Samples\DH WARP18\DH WARP18-F#3-V127-3DGR.flac" seqPosition="1"/>
-      <sample rootNote="72" loNote="67" hiNote="72" path="Samples\DH WARP18\DH WARP18-C4-V127-OY8E.flac" seqPosition="1"/>
-      <sample rootNote="78" loNote="73" hiNote="78" path="Samples\DH WARP18\DH WARP18-F#4-V127-DMAA.flac" seqPosition="1"/>
-      <sample rootNote="84" loNote="79" hiNote="84" path="Samples\DH WARP18\DH WARP18-C5-V127-92KG.flac" seqPosition="1"/>
-      <sample rootNote="90" loNote="85" hiNote="90" path="Samples\DH WARP18\DH WARP18-F#5-V127-AG4I.flac" seqPosition="1"/>
-      <sample rootNote="96" loNote="91" hiNote="96" path="Samples\DH WARP18\DH WARP18-C6-V127-ED8C.flac" seqPosition="1"/>
-      <sample rootNote="24" loNote="24" hiNote="24" path="Samples\DH WARP18\DH WARP18-C0-V127-ZOOQ.flac" seqPosition="2"/>
-      <sample rootNote="30" loNote="25" hiNote="30" path="Samples\DH WARP18\DH WARP18-F#0-V127-6RF4.flac" seqPosition="2"/>
-      <sample rootNote="36" loNote="31" hiNote="36" path="Samples\DH WARP18\DH WARP18-C1-V127-U4H7.flac" seqPosition="2"/>
-      <sample rootNote="42" loNote="37" hiNote="42" path="Samples\DH WARP18\DH WARP18-F#1-V127-O6XS.flac" seqPosition="2"/>
-      <sample rootNote="48" loNote="43" hiNote="48" path="Samples\DH WARP18\DH WARP18-C2-V127-LJBG.flac" seqPosition="2"/>
-      <sample rootNote="54" loNote="49" hiNote="54" path="Samples\DH WARP18\DH WARP18-F#2-V127-YWFU.flac" seqPosition="2"/>
-      <sample rootNote="60" loNote="55" hiNote="60" path="Samples\DH WARP18\DH WARP18-C3-V127-UXZK.flac" seqPosition="2"/>
-      <sample rootNote="66" loNote="61" hiNote="66" path="Samples\DH WARP18\DH WARP18-F#3-V127-LYK7.flac" seqPosition="2"/>
-      <sample rootNote="72" loNote="67" hiNote="72" path="Samples\DH WARP18\DH WARP18-C4-V127-Q8G6.flac" seqPosition="2"/>
-      <sample rootNote="78" loNote="73" hiNote="78" path="Samples\DH WARP18\DH WARP18-F#4-V127-O2LG.flac" seqPosition="2"/>
-      <sample rootNote="84" loNote="79" hiNote="84" path="Samples\DH WARP18\DH WARP18-C5-V127-AC6S.flac" seqPosition="2"/>
-      <sample rootNote="90" loNote="85" hiNote="90" path="Samples\DH WARP18\DH WARP18-F#5-V127-Q2O3.flac" seqPosition="2"/>
-      <sample rootNote="96" loNote="91" hiNote="96" path="Samples\DH WARP18\DH WARP18-C6-V127-X2WQ.flac" seqPosition="2"/>
+  <groups seqMode="round_robin" seqLength="2" attack="0.0" decay="0.0" sustain="1.0" release="0.48" ampVelTrack="0.2">
+    <group seqPosition="1">
+      <sample rootNote="24" loNote="0" hiNote="24" path="../Samples/DH WARP18/DH WARP18-C0-V127-O9LJ.flac" />
+      <sample rootNote="30" loNote="25" hiNote="30" path="../Samples/DH WARP18/DH WARP18-F#0-V127-0UXZ.flac" />
+      <sample rootNote="36" loNote="31" hiNote="36" path="../Samples/DH WARP18/DH WARP18-C1-V127-R79M.flac" />
+      <sample rootNote="42" loNote="37" hiNote="42" path="../Samples/DH WARP18/DH WARP18-F#1-V127-HW8S.flac" />
+      <sample rootNote="48" loNote="43" hiNote="48" path="../Samples/DH WARP18/DH WARP18-C2-V127-D8ZV.flac" />
+      <sample rootNote="54" loNote="49" hiNote="54" path="../Samples/DH WARP18/DH WARP18-F#2-V127-6B7M.flac" />
+      <sample rootNote="60" loNote="55" hiNote="60" path="../Samples/DH WARP18/DH WARP18-C3-V127-O9JD.flac" />
+      <sample rootNote="66" loNote="61" hiNote="66" path="../Samples/DH WARP18/DH WARP18-F#3-V127-3DGR.flac" />
+      <sample rootNote="72" loNote="67" hiNote="72" path="../Samples/DH WARP18/DH WARP18-C4-V127-OY8E.flac" />
+      <sample rootNote="78" loNote="73" hiNote="78" path="../Samples/DH WARP18/DH WARP18-F#4-V127-DMAA.flac" />
+      <sample rootNote="84" loNote="79" hiNote="84" path="../Samples/DH WARP18/DH WARP18-C5-V127-92KG.flac" />
+      <sample rootNote="90" loNote="85" hiNote="90" path="../Samples/DH WARP18/DH WARP18-F#5-V127-AG4I.flac" />
+      <sample rootNote="96" loNote="91" hiNote="127" path="../Samples/DH WARP18/DH WARP18-C6-V127-ED8C.flac" />
+    </group>
+    <group seqPosition="2">
+      <sample rootNote="24" loNote="0" hiNote="24" path="../Samples/DH WARP18/DH WARP18-C0-V127-ZOOQ.flac" />
+      <sample rootNote="30" loNote="25" hiNote="30" path="../Samples/DH WARP18/DH WARP18-F#0-V127-6RF4.flac" />
+      <sample rootNote="36" loNote="31" hiNote="36" path="../Samples/DH WARP18/DH WARP18-C1-V127-U4H7.flac" />
+      <sample rootNote="42" loNote="37" hiNote="42" path="../Samples/DH WARP18/DH WARP18-F#1-V127-O6XS.flac" />
+      <sample rootNote="48" loNote="43" hiNote="48" path="../Samples/DH WARP18/DH WARP18-C2-V127-LJBG.flac" />
+      <sample rootNote="54" loNote="49" hiNote="54" path="../Samples/DH WARP18/DH WARP18-F#2-V127-YWFU.flac" />
+      <sample rootNote="60" loNote="55" hiNote="60" path="../Samples/DH WARP18/DH WARP18-C3-V127-UXZK.flac" />
+      <sample rootNote="66" loNote="61" hiNote="66" path="../Samples/DH WARP18/DH WARP18-F#3-V127-LYK7.flac" />
+      <sample rootNote="72" loNote="67" hiNote="72" path="../Samples/DH WARP18/DH WARP18-C4-V127-Q8G6.flac" />
+      <sample rootNote="78" loNote="73" hiNote="78" path="../Samples/DH WARP18/DH WARP18-F#4-V127-O2LG.flac" />
+      <sample rootNote="84" loNote="79" hiNote="84" path="../Samples/DH WARP18/DH WARP18-C5-V127-AC6S.flac" />
+      <sample rootNote="90" loNote="85" hiNote="90" path="../Samples/DH WARP18/DH WARP18-F#5-V127-Q2O3.flac" />
+      <sample rootNote="96" loNote="91" hiNote="127" path="../Samples/DH WARP18/DH WARP18-C6-V127-X2WQ.flac" />
     </group>
   </groups>
   <ui>

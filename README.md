@@ -93,15 +93,29 @@ A `<group>` holds samples that share settings, such as velocity range, envelope 
 
 When you play the same note twice, a real instrument never sounds exactly the same. Round robin cycles through different recordings of the same note, so repeated notes don't sound like a "machine gun".
 
+Give each take **its own group**, and put the settings they share on `<groups>`:
+
 ```xml
-<group seqMode="round_robin" seqLength="3">
-  <sample ... seqPosition="1" />   <!-- 1st hit -->
-  <sample ... seqPosition="2" />   <!-- 2nd hit -->
-  <sample ... seqPosition="3" />   <!-- 3rd hit, then back to 1 -->
-</group>
+<groups seqMode="round_robin" seqLength="3" attack="0.01" release="0.6">
+  <group seqPosition="1"> ...all RR1 samples... </group>   <!-- 1st hit -->
+  <group seqPosition="2"> ...all RR2 samples... </group>   <!-- 2nd hit -->
+  <group seqPosition="3"> ...all RR3 samples... </group>   <!-- 3rd hit, then back to 1 -->
+</groups>
 ```
 
-`seqLength` is the number of takes. Each sample's `seqPosition` says which take it is.
+- `seqLength` is the number of takes. Each group's `seqPosition` says which take it is.
+- Every take group should have the **same zones**, using the same `rootNote`, `loNote` and `hiNote` values.
+- Settings on `<groups>`, such as the envelope, apply to every group inside it. A group can still override one, e.g. `<group seqPosition="2" tuning="0.03">`.
+
+### Other ways to use groups
+| Use | How |
+|---|---|
+| Velocity layers | `<group loVel="1" hiVel="80">` for soft recordings, `<group loVel="81" hiVel="127">` for hard ones |
+| Layering two sounds | Two groups without `seqPosition` play **together**. Use this on purpose, e.g. plucks plus a pad. |
+| Release noises | `<group trigger="release">` plays when you let go of a key |
+| Mix or mute a layer | Knob or button bound to `type="amp" level="group" position="N"`, with parameter `AMP_VOLUME` or `ENABLED` |
+
+> **Common mistake:** two full groups with no `seqPosition` don't alternate. They both play at once, which makes the sound twice as loud and phasey.
 
 ## 4. Amp envelope: ADSR
 
@@ -261,7 +275,7 @@ Each file in `Example Code/` shows one idea on its own:
 
 | Problem | Fix |
 |---|---|
-| No sound, or "file not found" | Check the `path`. It is relative to the `.dspreset` file, so use `Samples/...`, not `\Samples\...` or `..\Samples\...`. |
+| No sound, or "file not found" | Check the `path`. It is relative to the `.dspreset` file. In the main folder, use `Samples/...`. Inside `Example Code/` or `Instrument Examples/`, use `../Samples/...`. Always use forward slashes `/`. |
 | Some keys are silent | There is a gap between zones. Check the `loNote` and `hiNote` values. |
 | A knob does nothing | It has no `<binding>`, or its `position` points at the wrong effect. |
 | You can't read the knob text | Add `textColor="FFFFFFFF"` to the knob. |

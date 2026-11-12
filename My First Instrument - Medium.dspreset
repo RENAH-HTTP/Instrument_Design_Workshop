@@ -3,30 +3,27 @@
   <!-- MEDIUM: mapping + round robin + amp envelope. See README.md -->
 
   <!-- ============================ SAMPLES ============================ -->
-  <groups>
-    <group loVel="1" hiVel="127" seqMode="round_robin" seqLength="3"
-           attack="0.01" decay="0.2" sustain="0.9" release="0.6"
-           ampVelTrack="0.35">
-      <!-- Round robin take 1 -->
-      <sample rootNote="52" loNote="0"  hiNote="52"  seqPosition="1" path="Samples/DH WARP3/DH WARP3_052_RR1.flac" />
-      <sample rootNote="62" loNote="53" hiNote="62"  seqPosition="1" path="Samples/DH WARP3/DH WARP3_062_RR1.flac" />
-      <sample rootNote="71" loNote="63" hiNote="71"  seqPosition="1" path="Samples/DH WARP3/DH WARP3_071_RR1.flac" />
-      <sample rootNote="83" loNote="72" hiNote="83"  seqPosition="1" path="Samples/DH WARP3/DH WARP3_083_RR1.flac" />
-      <sample rootNote="96" loNote="84" hiNote="127" seqPosition="1" path="Samples/DH WARP3/DH WARP3_096_RR1.flac" />
-
-      <!-- Round robin take 2 -->
-      <sample rootNote="52" loNote="0"  hiNote="52"  seqPosition="2" path="Samples/DH WARP3/DH WARP3_052_RR2.flac" />
-      <sample rootNote="62" loNote="53" hiNote="62"  seqPosition="2" path="Samples/DH WARP3/DH WARP3_062_RR2.flac" />
-      <sample rootNote="71" loNote="63" hiNote="71"  seqPosition="2" path="Samples/DH WARP3/DH WARP3_071_RR2.flac" />
-      <sample rootNote="83" loNote="72" hiNote="83"  seqPosition="2" path="Samples/DH WARP3/DH WARP3_083_RR2.flac" />
-      <sample rootNote="96" loNote="84" hiNote="127" seqPosition="2" path="Samples/DH WARP3/DH WARP3_096_RR2.flac" />
-
-      <!-- Round robin take 3 -->
-      <sample rootNote="52" loNote="0"  hiNote="52"  seqPosition="3" path="Samples/DH WARP3/DH WARP3_052_RR3.flac" />
-      <sample rootNote="62" loNote="53" hiNote="62"  seqPosition="3" path="Samples/DH WARP3/DH WARP3_062_RR3.flac" />
-      <sample rootNote="71" loNote="63" hiNote="71"  seqPosition="3" path="Samples/DH WARP3/DH WARP3_071_RR3.flac" />
-      <sample rootNote="83" loNote="72" hiNote="83"  seqPosition="3" path="Samples/DH WARP3/DH WARP3_083_RR3.flac" />
-      <sample rootNote="96" loNote="84" hiNote="127" seqPosition="3" path="Samples/DH WARP3/DH WARP3_096_RR3.flac" />
+  <groups seqMode="round_robin" seqLength="3" attack="0.01" decay="0.2" sustain="0.9" release="0.6" ampVelTrack="0.35">
+    <group seqPosition="1">
+      <sample rootNote="52" loNote="0" hiNote="52" path="Samples/DH WARP3/DH WARP3_052_RR1.flac" />
+      <sample rootNote="62" loNote="53" hiNote="62" path="Samples/DH WARP3/DH WARP3_062_RR1.flac" />
+      <sample rootNote="71" loNote="63" hiNote="71" path="Samples/DH WARP3/DH WARP3_071_RR1.flac" />
+      <sample rootNote="83" loNote="72" hiNote="83" path="Samples/DH WARP3/DH WARP3_083_RR1.flac" />
+      <sample rootNote="96" loNote="84" hiNote="127" path="Samples/DH WARP3/DH WARP3_096_RR1.flac" />
+    </group>
+    <group seqPosition="2">
+      <sample rootNote="52" loNote="0" hiNote="52" path="Samples/DH WARP3/DH WARP3_052_RR2.flac" />
+      <sample rootNote="62" loNote="53" hiNote="62" path="Samples/DH WARP3/DH WARP3_062_RR2.flac" />
+      <sample rootNote="71" loNote="63" hiNote="71" path="Samples/DH WARP3/DH WARP3_071_RR2.flac" />
+      <sample rootNote="83" loNote="72" hiNote="83" path="Samples/DH WARP3/DH WARP3_083_RR2.flac" />
+      <sample rootNote="96" loNote="84" hiNote="127" path="Samples/DH WARP3/DH WARP3_096_RR2.flac" />
+    </group>
+    <group seqPosition="3">
+      <sample rootNote="52" loNote="0" hiNote="52" path="Samples/DH WARP3/DH WARP3_052_RR3.flac" />
+      <sample rootNote="62" loNote="53" hiNote="62" path="Samples/DH WARP3/DH WARP3_062_RR3.flac" />
+      <sample rootNote="71" loNote="63" hiNote="71" path="Samples/DH WARP3/DH WARP3_071_RR3.flac" />
+      <sample rootNote="83" loNote="72" hiNote="83" path="Samples/DH WARP3/DH WARP3_083_RR3.flac" />
+      <sample rootNote="96" loNote="84" hiNote="127" path="Samples/DH WARP3/DH WARP3_096_RR3.flac" />
     </group>
   </groups>
 

@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DecentSampler minVersion="1.27.0">
-  <groups>
-    <group loVel="1" hiVel="127" seqMode="round_robin" seqLength="3" attack="0.0" decay="0.0" sustain="1.0" release="0.48" ampVelTrack="0.2">
-      <sample rootNote="47" loNote="24" hiNote="47" path="Samples\BasitarPlucks\BasitarPlucks_047_RR1.flac" seqPosition="1"/>
-      <sample rootNote="54" loNote="48" hiNote="54" path="Samples\BasitarPlucks\BasitarPlucks_054_RR1.flac" seqPosition="1"/>
-      <sample rootNote="59" loNote="55" hiNote="59" path="Samples\BasitarPlucks\BasitarPlucks_059_RR1.flac" seqPosition="1"/>
-      <sample rootNote="61" loNote="60" hiNote="61" path="Samples\BasitarPlucks\BasitarPlucks_061_RR1.flac" seqPosition="1"/>
-      <sample rootNote="66" loNote="62" hiNote="66" path="Samples\BasitarPlucks\BasitarPlucks_066_RR1.flac" seqPosition="1"/>
-      <sample rootNote="47" loNote="24" hiNote="47" path="Samples\BasitarPlucks\BasitarPlucks_047_RR2.flac" seqPosition="2"/>
-      <sample rootNote="54" loNote="48" hiNote="54" path="Samples\BasitarPlucks\BasitarPlucks_054_RR2.flac" seqPosition="2"/>
-      <sample rootNote="59" loNote="55" hiNote="59" path="Samples\BasitarPlucks\BasitarPlucks_059_RR2.flac" seqPosition="2"/>
-      <sample rootNote="61" loNote="60" hiNote="61" path="Samples\BasitarPlucks\BasitarPlucks_061_RR2.flac" seqPosition="2"/>
-      <sample rootNote="66" loNote="62" hiNote="66" path="Samples\BasitarPlucks\BasitarPlucks_066_RR2.flac" seqPosition="2"/>
-      <sample rootNote="47" loNote="24" hiNote="47" path="Samples\BasitarPlucks\BasitarPlucks_047_RR3.flac" seqPosition="3"/>
-      <sample rootNote="54" loNote="48" hiNote="54" path="Samples\BasitarPlucks\BasitarPlucks_054_RR3.flac" seqPosition="3"/>
-      <sample rootNote="59" loNote="55" hiNote="59" path="Samples\BasitarPlucks\BasitarPlucks_059_RR3.flac" seqPosition="3"/>
-      <sample rootNote="61" loNote="60" hiNote="61" path="Samples\BasitarPlucks\BasitarPlucks_061_RR3.flac" seqPosition="3"/>
-      <sample rootNote="66" loNote="62" hiNote="66" path="Samples\BasitarPlucks\BasitarPlucks_066_RR3.flac" seqPosition="3"/>
+  <groups seqMode="round_robin" seqLength="3" attack="0.0" decay="0.0" sustain="1.0" release="0.48" ampVelTrack="0.2">
+    <group seqPosition="1">
+      <sample rootNote="47" loNote="0" hiNote="47" path="../Samples/BasitarPlucks/BasitarPlucks_047_RR1.flac" />
+      <sample rootNote="54" loNote="48" hiNote="54" path="../Samples/BasitarPlucks/BasitarPlucks_054_RR1.flac" />
+      <sample rootNote="59" loNote="55" hiNote="59" path="../Samples/BasitarPlucks/BasitarPlucks_059_RR1.flac" />
+      <sample rootNote="61" loNote="60" hiNote="61" path="../Samples/BasitarPlucks/BasitarPlucks_061_RR1.flac" />
+      <sample rootNote="66" loNote="62" hiNote="127" path="../Samples/BasitarPlucks/BasitarPlucks_066_RR1.flac" />
+    </group>
+    <group seqPosition="2">
+      <sample rootNote="47" loNote="0" hiNote="47" path="../Samples/BasitarPlucks/BasitarPlucks_047_RR2.flac" />
+      <sample rootNote="54" loNote="48" hiNote="54" path="../Samples/BasitarPlucks/BasitarPlucks_054_RR2.flac" />
+      <sample rootNote="59" loNote="55" hiNote="59" path="../Samples/BasitarPlucks/BasitarPlucks_059_RR2.flac" />
+      <sample rootNote="61" loNote="60" hiNote="61" path="../Samples/BasitarPlucks/BasitarPlucks_061_RR2.flac" />
+      <sample rootNote="66" loNote="62" hiNote="127" path="../Samples/BasitarPlucks/BasitarPlucks_066_RR2.flac" />
+    </group>
+    <group seqPosition="3">
+      <sample rootNote="47" loNote="0" hiNote="47" path="../Samples/BasitarPlucks/BasitarPlucks_047_RR3.flac" />
+      <sample rootNote="54" loNote="48" hiNote="54" path="../Samples/BasitarPlucks/BasitarPlucks_054_RR3.flac" />
+      <sample rootNote="59" loNote="55" hiNote="59" path="../Samples/BasitarPlucks/BasitarPlucks_059_RR3.flac" />
+      <sample rootNote="61" loNote="60" hiNote="61" path="../Samples/BasitarPlucks/BasitarPlucks_061_RR3.flac" />
+      <sample rootNote="66" loNote="62" hiNote="127" path="../Samples/BasitarPlucks/BasitarPlucks_066_RR3.flac" />
     </group>
   </groups>
   <ui>

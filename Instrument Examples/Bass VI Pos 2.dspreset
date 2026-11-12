@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DecentSampler minVersion="1.27.0">
-  <groups>
-    <group loVel="1" hiVel="127" seqMode="round_robin" seqLength="3" attack="0.0" decay="0.0" sustain="1.0" release="0.48" ampVelTrack="0.2">
-      <sample rootNote="48" loNote="24" hiNote="48" path="Samples\Bass VI Pos 2\Bass VI Pos 2 48 RR-001.flac" seqPosition="1"/>
-      <sample rootNote="62" loNote="49" hiNote="62" path="Samples\Bass VI Pos 2\Bass VI Pos 2 62 RR-001.flac" seqPosition="1"/>
-      <sample rootNote="69" loNote="63" hiNote="69" path="Samples\Bass VI Pos 2\Bass VI Pos 2 69 RR-001.flac" seqPosition="1"/>
-      <sample rootNote="74" loNote="70" hiNote="74" path="Samples\Bass VI Pos 2\Bass VI Pos 2 74 RR-001.flac" seqPosition="1"/>
-      <sample rootNote="79" loNote="75" hiNote="79" path="Samples\Bass VI Pos 2\Bass VI Pos 2 79 RR-001.flac" seqPosition="1"/>
-      <sample rootNote="83" loNote="80" hiNote="83" path="Samples\Bass VI Pos 2\Bass VI Pos 2 83 RR-001.flac" seqPosition="1"/>
-      <sample rootNote="88" loNote="84" hiNote="88" path="Samples\Bass VI Pos 2\Bass VI Pos 2 88 RR-001.flac" seqPosition="1"/>
-      <sample rootNote="48" loNote="24" hiNote="48" path="Samples\Bass VI Pos 2\Bass VI Pos 2 48 RR-002.flac" seqPosition="2"/>
-      <sample rootNote="62" loNote="49" hiNote="62" path="Samples\Bass VI Pos 2\Bass VI Pos 2 62 RR-002.flac" seqPosition="2"/>
-      <sample rootNote="69" loNote="63" hiNote="69" path="Samples\Bass VI Pos 2\Bass VI Pos 2 69 RR-002.flac" seqPosition="2"/>
-      <sample rootNote="74" loNote="70" hiNote="74" path="Samples\Bass VI Pos 2\Bass VI Pos 2 74 RR-002.flac" seqPosition="2"/>
-      <sample rootNote="79" loNote="75" hiNote="79" path="Samples\Bass VI Pos 2\Bass VI Pos 2 79 RR-002.flac" seqPosition="2"/>
-      <sample rootNote="83" loNote="80" hiNote="83" path="Samples\Bass VI Pos 2\Bass VI Pos 2 83 RR-002.flac" seqPosition="2"/>
-      <sample rootNote="88" loNote="84" hiNote="88" path="Samples\Bass VI Pos 2\Bass VI Pos 2 88 RR-002.flac" seqPosition="2"/>
-      <sample rootNote="48" loNote="24" hiNote="48" path="Samples\Bass VI Pos 2\Bass VI Pos 2 48 RR-003.flac" seqPosition="3"/>
-      <sample rootNote="62" loNote="49" hiNote="62" path="Samples\Bass VI Pos 2\Bass VI Pos 2 62 RR-003.flac" seqPosition="3"/>
-      <sample rootNote="69" loNote="63" hiNote="69" path="Samples\Bass VI Pos 2\Bass VI Pos 2 69 RR-003.flac" seqPosition="3"/>
-      <sample rootNote="74" loNote="70" hiNote="74" path="Samples\Bass VI Pos 2\Bass VI Pos 2 74 RR-003.flac" seqPosition="3"/>
-      <sample rootNote="79" loNote="75" hiNote="79" path="Samples\Bass VI Pos 2\Bass VI Pos 2 79 RR-003.flac" seqPosition="3"/>
-      <sample rootNote="83" loNote="80" hiNote="83" path="Samples\Bass VI Pos 2\Bass VI Pos 2 83 RR-003.flac" seqPosition="3"/>
-      <sample rootNote="88" loNote="84" hiNote="88" path="Samples\Bass VI Pos 2\Bass VI Pos 2 88 RR-003.flac" seqPosition="3"/>
+  <groups seqMode="round_robin" seqLength="3" attack="0.0" decay="0.0" sustain="1.0" release="0.48" ampVelTrack="0.2">
+    <group seqPosition="1">
+      <sample rootNote="48" loNote="0" hiNote="48" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 48 RR-001.flac" />
+      <sample rootNote="62" loNote="49" hiNote="62" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 62 RR-001.flac" />
+      <sample rootNote="69" loNote="63" hiNote="69" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 69 RR-001.flac" />
+      <sample rootNote="74" loNote="70" hiNote="74" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 74 RR-001.flac" />
+      <sample rootNote="79" loNote="75" hiNote="79" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 79 RR-001.flac" />
+      <sample rootNote="83" loNote="80" hiNote="83" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 83 RR-001.flac" />
+      <sample rootNote="88" loNote="84" hiNote="127" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 88 RR-001.flac" />
+    </group>
+    <group seqPosition="2">
+      <sample rootNote="48" loNote="0" hiNote="48" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 48 RR-002.flac" />
+      <sample rootNote="62" loNote="49" hiNote="62" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 62 RR-002.flac" />
+      <sample rootNote="69" loNote="63" hiNote="69" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 69 RR-002.flac" />
+      <sample rootNote="74" loNote="70" hiNote="74" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 74 RR-002.flac" />
+      <sample rootNote="79" loNote="75" hiNote="79" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 79 RR-002.flac" />
+      <sample rootNote="83" loNote="80" hiNote="83" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 83 RR-002.flac" />
+      <sample rootNote="88" loNote="84" hiNote="127" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 88 RR-002.flac" />
+    </group>
+    <group seqPosition="3">
+      <sample rootNote="48" loNote="0" hiNote="48" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 48 RR-003.flac" />
+      <sample rootNote="62" loNote="49" hiNote="62" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 62 RR-003.flac" />
+      <sample rootNote="69" loNote="63" hiNote="69" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 69 RR-003.flac" />
+      <sample rootNote="74" loNote="70" hiNote="74" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 74 RR-003.flac" />
+      <sample rootNote="79" loNote="75" hiNote="79" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 79 RR-003.flac" />
+      <sample rootNote="83" loNote="80" hiNote="83" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 83 RR-003.flac" />
+      <sample rootNote="88" loNote="84" hiNote="127" path="../Samples/Bass VI Pos 2/Bass VI Pos 2 88 RR-003.flac" />
     </group>
   </groups>
   <ui>
