@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <!-- MY FIRST INSTRUMENT
+       Replace every YOUR_* value, then duplicate the sample zones as needed. -->
+  <groups
+    polyphony="1"
+    glideTime="0.08"
+    glideMode="legato"
+    returnToHeldNote="true">
+
+    <!-- 1. DYNAMIC LAYERS + 2. SAMPLE MAPPING + 3. ROUND ROBIN
+         Make three copies of this group for soft, medium, and hard recordings.
+         Change loVel/hiVel and seqLength/seqPosition as you add takes. -->
+    <group
+      name="Soft"
+      tags="sustain"
+      loVel="1"
+      hiVel="40"
+      seqMode="round_robin"
+      seqLength="2"
+      attack="0.01"
+      decay="0.2"
+      sustain="0.9"
+      release="0.5"
+      ampVelTrack="0.2">
+      <!-- TODO: Set rootNote to the recorded pitch. Set loNote/hiNote for its zone. -->
+      <sample
+        rootNote="60"
+        loNote="24"
+        hiNote="127"
+        path="..\Samples\YOUR_INSTRUMENT\YOUR_SOFT_C4_RR1.flac"
+        seqPosition="1" />
+      <sample
+        rootNote="60"
+        loNote="24"
+        hiNote="127"
+        path="..\Samples\YOUR_INSTRUMENT\YOUR_SOFT_C4_RR2.flac"
+        seqPosition="2" />
+    </group>
+
+    <!-- TODO: Duplicate the Soft group for Medium and Hard layers.
+         Suggested ranges: Medium 41-90, Hard 91-127. -->
+
+    <!-- 4. TRUE SAMPLED LEGATO
+         Replace this transition stand-in with a real C4-to-D4 recording.
+         Add more transition samples with different previousNote values. -->
+    <group
+      name="Legato Transitions"
+      tags="legato"
+      trigger="legato"
+      silencedByTags="legato"
+      silencingMode="normal"
+      attack="0.01"
+      release="0.3">
+      <sample
+        rootNote="D4"
+        loNote="D4"
+        hiNote="D4"
+        previousNote="C4"
+        path="..\Samples\YOUR_INSTRUMENT\YOUR_LEGATO_C4_TO_D4.flac" />
+    </group>
+  </groups>
+
+  <!-- 5. EFFECTS
+       Remove effects you do not need and adjust them while listening. -->
+  <effects>
+    <effect type="lowpass" enabled="1" frequency="18000" resonance="0.5" />
+    <effect type="chorus" mix="0.15" modDepth="0.2" modRate="0.2" />
+    <effect
+      type="delay"
+      delayTimeFormat="musical_time"
+      delayTime="4.0"
+      stereoOffset="0.02"
+      feedback="0.25"
+      wetLevel="0.1" />
+    <!-- TODO: Replace the impulse response if you want a different space. -->
+    <effect type="convolution" irFile="..\IR\BBD.flac" wetLevel="0.15" mix="0.15" />
+    <effect type="gain" level="-3" />
+  </effects>
+
+  <!-- 6. LFO MODULATION
+       Set modAmount to 0 to disable vibrato. -->
+  <modulators>
+    <lfo shape="triangle" frequency="5" modAmount="0.1" scope="voice">
+      <binding level="group" type="amp" parameter="GROUP_TUNING" />
+    </lfo>
+  </modulators>
+
+  <!-- 7. USER INTERFACE -->
+  <ui>
+    <tab name="main">
+      <label x="24" y="20" width="600" height="30" text="My First Instrument" />
+      <control
+        parameterName="AMP_VOLUME"
+        x="24"
+        y="72"
+        width="100"
+        height="100"
+        minValue="-48"
+        maxValue="12"
+        value="0" />
+      <control
+        parameterName="ENV_ATTACK"
+        x="144"
+        y="72"
+        width="100"
+        height="100"
+        minValue="0"
+        maxValue="10"
+        value="0.01" />
+      <control
+        parameterName="ENV_RELEASE"
+        x="264"
+        y="72"
+        width="100"
+        height="100"
+        minValue="0"
+        maxValue="10"
+        value="0.5" />
+    </tab>
+  </ui>
+</DecentSampler>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <groups>
+    <!-- groupTuning is in semitones; groupPan ranges from -1.0 to 1.0. -->
+    <group loVel="1" hiVel="127" groupTuning="-12" groupPan="-0.5">
+      <sample rootNote="47" loNote="24" hiNote="127"
+              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR1.flac" />
+    </group>
+  </groups>
+</DecentSampler>

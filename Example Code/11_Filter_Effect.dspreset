@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <groups>
+    <group loVel="1" hiVel="127">
+      <sample rootNote="47" loNote="24" hiNote="127"
+              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR1.flac" />
+      <effects>
+        <!-- Lower frequency to remove high frequencies; resonance emphasizes the cutoff. -->
+        <effect type="lowpass" enabled="1" frequency="1800" resonance="0.5" />
+      </effects>
+    </group>
+  </groups>
+</DecentSampler>

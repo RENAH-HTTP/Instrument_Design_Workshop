@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <groups>
+    <group
+      loVel="1"
+      hiVel="127"
+      attack="0.05"
+      decay="0.4"
+      sustain="0.7"
+      release="1.2">
+      <!-- Change these four envelope values and listen to the result. -->
+      <sample rootNote="47" loNote="24" hiNote="127"
+              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR1.flac" />
+    </group>
+  </groups>
+</DecentSampler>

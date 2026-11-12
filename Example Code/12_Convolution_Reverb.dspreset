@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <groups>
+    <group loVel="1" hiVel="127">
+      <sample rootNote="47" loNote="24" hiNote="127"
+              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR1.flac" />
+    </group>
+  </groups>
+  <effects>
+    <!-- This uses the BBD impulse response from the project IR folder. -->
+    <effect type="convolution" irFile="..\IR\BBD.flac" wetLevel="0.25" mix="0.25" />
+  </effects>
+</DecentSampler>

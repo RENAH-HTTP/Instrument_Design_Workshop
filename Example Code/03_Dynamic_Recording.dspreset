@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <groups>
+    <!-- Each group responds to a different MIDI velocity range. -->
+    <group loVel="1" hiVel="30">
+      <!-- Replace this with a genuinely soft recording. -->
+      <sample rootNote="47" loNote="24" hiNote="127"
+              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR1.flac" />
+    </group>
+    <group loVel="31" hiVel="90">
+      <!-- Replace this with a medium recording. -->
+      <sample rootNote="47" loNote="24" hiNote="127"
+              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR2.flac" />
+    </group>
+    <group loVel="91" hiVel="127">
+      <!-- Replace this with a hard recording. -->
+      <sample rootNote="47" loNote="24" hiNote="127"
+              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR3.flac" />
+    </group>
+  </groups>
+</DecentSampler>

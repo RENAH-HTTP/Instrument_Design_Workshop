@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <groups>
+    <group loVel="1" hiVel="127" seqMode="round_robin" seqLength="3" attack="0.0" decay="0.0" sustain="1.0" release="0.48" ampVelTrack="0.2">
+      <sample rootNote="47" loNote="24" hiNote="47" path="Samples\BasitarPlucks\BasitarPlucks_047_RR1.flac" seqPosition="1"/>
+      <sample rootNote="54" loNote="48" hiNote="54" path="Samples\BasitarPlucks\BasitarPlucks_054_RR1.flac" seqPosition="1"/>
+      <sample rootNote="59" loNote="55" hiNote="59" path="Samples\BasitarPlucks\BasitarPlucks_059_RR1.flac" seqPosition="1"/>
+      <sample rootNote="61" loNote="60" hiNote="61" path="Samples\BasitarPlucks\BasitarPlucks_061_RR1.flac" seqPosition="1"/>
+      <sample rootNote="66" loNote="62" hiNote="66" path="Samples\BasitarPlucks\BasitarPlucks_066_RR1.flac" seqPosition="1"/>
+      <sample rootNote="47" loNote="24" hiNote="47" path="Samples\BasitarPlucks\BasitarPlucks_047_RR2.flac" seqPosition="2"/>
+      <sample rootNote="54" loNote="48" hiNote="54" path="Samples\BasitarPlucks\BasitarPlucks_054_RR2.flac" seqPosition="2"/>
+      <sample rootNote="59" loNote="55" hiNote="59" path="Samples\BasitarPlucks\BasitarPlucks_059_RR2.flac" seqPosition="2"/>
+      <sample rootNote="61" loNote="60" hiNote="61" path="Samples\BasitarPlucks\BasitarPlucks_061_RR2.flac" seqPosition="2"/>
+      <sample rootNote="66" loNote="62" hiNote="66" path="Samples\BasitarPlucks\BasitarPlucks_066_RR2.flac" seqPosition="2"/>
+      <sample rootNote="47" loNote="24" hiNote="47" path="Samples\BasitarPlucks\BasitarPlucks_047_RR3.flac" seqPosition="3"/>
+      <sample rootNote="54" loNote="48" hiNote="54" path="Samples\BasitarPlucks\BasitarPlucks_054_RR3.flac" seqPosition="3"/>
+      <sample rootNote="59" loNote="55" hiNote="59" path="Samples\BasitarPlucks\BasitarPlucks_059_RR3.flac" seqPosition="3"/>
+      <sample rootNote="61" loNote="60" hiNote="61" path="Samples\BasitarPlucks\BasitarPlucks_061_RR3.flac" seqPosition="3"/>
+      <sample rootNote="66" loNote="62" hiNote="66" path="Samples\BasitarPlucks\BasitarPlucks_066_RR3.flac" seqPosition="3"/>
+    </group>
+  </groups>
+  <ui>
+    <tab name="main">
+      <label x="24" y="20" width="500" height="30" text="BasitarPlucks" />
+      <control parameterName="AMP_VOLUME" x="24" y="72" width="100" height="100" minValue="-48" maxValue="12" value="0" />
+      <control parameterName="ENV_ATTACK" x="144" y="72" width="100" height="100" minValue="0" maxValue="10" value="0" />
+      <control parameterName="ENV_RELEASE" x="264" y="72" width="100" height="100" minValue="0" maxValue="10" value="0.48" />
+    </tab>
+  </ui>
+</DecentSampler>

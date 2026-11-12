@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <groups polyphony="8">
+    <group loVel="1" hiVel="127" attack="0.01" decay="0.3" sustain="0.7" release="0.5">
+      <!-- This example produces sound without an audio sample. -->
+      <oscillator waveform="saw" />
+    </group>
+  </groups>
+</DecentSampler>

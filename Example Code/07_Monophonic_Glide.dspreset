@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <!-- Overlapping notes glide instead of creating polyphonic voices. -->
+  <groups polyphony="1" glideTime="0.08" glideMode="legato">
+    <group loVel="1" hiVel="127" attack="0.01" release="0.3">
+      <sample rootNote="47" loNote="24" hiNote="127"
+              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR1.flac" />
+    </group>
+  </groups>
+</DecentSampler>

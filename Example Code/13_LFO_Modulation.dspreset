@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <groups>
+    <group loVel="1" hiVel="127">
+      <sample rootNote="47" loNote="24" hiNote="127"
+              path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR1.flac" />
+    </group>
+  </groups>
+  <modulators>
+    <!-- A slow LFO changes tuning, creating vibrato. -->
+    <lfo shape="triangle" frequency="5" modAmount="0.15" scope="voice">
+      <binding level="group" type="amp" parameter="GROUP_TUNING" />
+    </lfo>
+  </modulators>
+</DecentSampler>

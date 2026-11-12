@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSamplerLibraryInfo name="Instrument Design Workshop">
+  <presetMenu>
+    <menu name="Guitars &amp; Plucks">
+      <preset file="BasitarPlucks.dspreset"/>
+      <preset file="Bass VI Pos 2.dspreset"/>
+      <preset file="Strat Pos 3 Bright.dspreset"/>
+      <preset file="Strat Pos 3 Chorus.dspreset"/>
+    </menu>
+    <menu name="Textures">
+      <preset file="Cold Climates.dspreset"/>
+      <preset file="Corrode.dspreset"/>
+      <preset file="Glass.dspreset"/>
+      <preset file="Reverse.dspreset"/>
+    </menu>
+    <menu name="WARP &amp; Harmonics">
+      <preset file="DH WARP18.dspreset"/>
+      <preset file="DH WARP3.dspreset"/>
+      <preset file="HarmSK02.dspreset"/>
+    </menu>
+  </presetMenu>
+</DecentSamplerLibraryInfo>

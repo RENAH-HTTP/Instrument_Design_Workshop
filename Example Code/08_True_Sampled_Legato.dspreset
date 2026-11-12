@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.27.0">
+  <groups returnToHeldNote="true">
+    <!-- The first note starts a normal sustain sample. -->
+    <group
+      tags="sustain"
+      silencedByTags="legato"
+      trigger="first"
+      silencingMode="normal"
+      release="0.3">
+      <sample
+        rootNote="B2"
+        loNote="B2"
+        hiNote="B2"
+        path="..\Samples\BasitarPlucks\BasitarPlucks_047_RR1.flac" />
+    </group>
+
+    <!-- Replace this stand-in with a recording of B2 transitioning to F#3. -->
+    <group
+      tags="legato"
+      silencedByTags="legato"
+      trigger="legato"
+      silencingMode="normal"
+      attack="0.01"
+      release="0.3">
+      <sample
+        rootNote="F#3"
+        loNote="F#3"
+        hiNote="F#3"
+        previousNote="B2"
+        path="..\Samples\BasitarPlucks\BasitarPlucks_054_RR2.flac" />
+    </group>
+  </groups>
+
+  <tags>
+    <tag name="legato" polyphony="1" />
+  </tags>
+</DecentSampler>
